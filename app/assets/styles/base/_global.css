@@ -7,3 +7,11 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+a {
+	color: $orange;
+}
+
+* {
+	box-sizing: border-box;
+}
