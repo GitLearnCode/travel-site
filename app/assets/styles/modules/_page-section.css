@@ -9,4 +9,13 @@
 		background-color: $themeColor;
 		color: #fff;
 	}
+
+	&__testimonials {
+		background-color: #e0e6ef;
+		
+		@mixin atSmall {
+			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+			background-size: cover;
+		}
+	}	
 }
