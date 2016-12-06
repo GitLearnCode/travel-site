@@ -12,7 +12,12 @@
 		left: 0;
 		width: 100%;
 		text-align: center;
+		padding-top: 88px;
 		transform: translateY(-50%);
+
+		@mixn atMedium {
+			padding-top: 60px;
+		}
 	}
 
 	&__title {
