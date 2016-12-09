@@ -45,7 +45,6 @@
 
 	a {
 		display: block;
-		
 		color: #fff;
 		font-weight: 300;
 		text-decoration: none;
@@ -53,6 +52,9 @@
 
 		@mixin atMedium {
 			padding: 12px 0;
+			&.is-current-link {
+				color: #fabb69;
+			}
 		} 
 	}
 }

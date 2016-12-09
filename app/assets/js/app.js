@@ -1,7 +1,9 @@
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/revealOnScroll';
+import StickyHeader from './modules/stickyHeader';
 import $ from 'jquery';
 
 var mobileMenu = new MobileMenu();
-new RevealOnScroll($(".feature-item"), "75%");
-new RevealOnScroll($(".testimonial"), "50%");
+new RevealOnScroll($(".feature-item"), "80%");
+new RevealOnScroll($(".testimonial"), "70%");
+var stickyHeader = new StickyHeader();
