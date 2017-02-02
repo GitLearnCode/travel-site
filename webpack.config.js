@@ -1,8 +1,11 @@
 module.exports = {
-	entry: "./app/assets/js/app.js",
+	entry: {
+		App: "./app/assets/js/app.js",
+		Vendor: "./app/assets/js/vendor.js"
+	},
 	output: {
 		path: "./app/temp/js",
-		filename: "app.js"
+		filename: "[name].js"// create a file for eache entry file with the same name.
 	},
 	module: {
 		loaders: [

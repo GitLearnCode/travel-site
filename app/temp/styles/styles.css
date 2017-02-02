@@ -619,9 +619,14 @@ a {
   background-color: #e0e6ef;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 800px) {
 
-  .page-section__testimonials {
+  .page-section__testimonials {/* backgroundimage is loaded with lazyload
+			when user scrolls to the section the class
+			lazyload will change into lazyloaded */
+  }
+
+  .page-section__testimonials.lazyloaded {
     background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
     background-size: cover;
   }
