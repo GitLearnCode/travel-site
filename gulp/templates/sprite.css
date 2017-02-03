@@ -4,7 +4,11 @@ Edit gulp/templates/sprite instead. */
 {{#shapes}}
 	{{#first}}
 		.icon {
-			background-image: url('../../assets/images/sprites/{{{sprite}}}');/* /assets/images/sprites/{{{sprite}}}*/
+			background-image: url('/assets/images/sprites/{{{sprite}}}');
+		}
+
+		.no-svg .icon {
+			background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
 		}
 	{{/first}}
 

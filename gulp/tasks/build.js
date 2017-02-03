@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 var paths = {
 	root: {
-		dest: './docs'
+		dest: './dist'
 	}
 }
 // task to preview the build dist folder
@@ -47,7 +47,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function () {
     	interlaced: true,  // will optimize gif images
     	multipass: true    // will optimize svg 
     }))
-    .pipe(gulp.dest("./docs/assets/images"));
+    .pipe(gulp.dest("./dist/assets/images"));
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
